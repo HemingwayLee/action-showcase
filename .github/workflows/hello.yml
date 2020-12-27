@@ -10,7 +10,7 @@ jobs:
     name: Echo
     steps:
       - run: echo "hello, action"
-      - name: Install licensed
+      - name: show ls and pwd
         run: |
           ls
           pwd
