@@ -1,0 +1,16 @@
+name: helloworld
+
+on:
+  push: {branches: main}
+  pull_request: {branches: main}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Echo
+    steps:
+      - run: echo "hello, action"
+      - name: Install licensed
+        run: |
+          ls
+          pwd
