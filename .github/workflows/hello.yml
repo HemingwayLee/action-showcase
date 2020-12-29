@@ -15,4 +15,4 @@ jobs:
           ls
           pwd
       - name: access secret
-        run: echo ${{MY_ID}}
+        run: echo ${{ secrets.MY_ID }}
