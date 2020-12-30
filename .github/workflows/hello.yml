@@ -7,6 +7,8 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      IMAGE_NAME: sample-app
     name: Echo
     steps:
       - run: echo "hello, action"
@@ -14,5 +16,11 @@ jobs:
         run: |
           ls
           pwd
-      - name: access secret
+      - name: access my env variable defined in this file
+        run: echo ${{ env.IMAGE_NAME }}
+      - name: access my defined secret
         run: echo ${{ secrets.MY_ID }}
+      - name: access github default variable
+        run: |
+          echo ${{ github.run_id }}
+          echo ${{ github.run_number }}  
