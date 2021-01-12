@@ -6,7 +6,7 @@
 # action examples
 * push docker image to docker hub (triggered by `release`, `release` is based on `tag`), [link](https://github.com/HemingwayLee/team-calendar)
 * specify dockerfile path, [link](https://github.com/HemingwayLee/docker-cheatsheet)
-* push multiple dockerfiles
+* push multiple dockerfiles, [link](https://github.com/HemingwayLee/docker-cheatsheet)
 * push a javascript library, [link](https://github.com/HemingwayLee/node-lib-showcase)
 * specify javascript library path, [link](https://github.com/HemingwayLee/node-cheatsheet)
 
